@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title id="template-title">{{page.title}} | {{site.title}}</title>
+	<link id="template-canonical" rel="canonical" href="{{page.canonicalurl}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Vidaloka&display=swap">
+	<link rel="stylesheet" href="/src/css/styles.css">
+	<script src="/src/js/scripts.js"></script>
+</head>
+<body>
+<a id="template-skiplink" href="#main-content">Skip to Content</a>
+<header id="template-header" class="layout-container">
+	<div class="layout-row">
+        <div class="layout-col">
+            <div id="header-menu" class="content-component">
+                <a id="menu-open" href="#" title="Open Menu"><span id="menu-open-icon">𝄚<!--☰--></span></a>
+            </div>
+        </div>
+		<div class="layout-col">
+			<div id="header-masthead" class="content-component">
+                <div class="wrapping-row">
+                    <div><a href="/"><img id="site-logo" src="/src/img/dpccb_logo.png" width="164px" alt="DPCCB Logo" class="a-hover"></a></div>
+                    <div><a id="site-title" href="/">Des&nbsp;Plaines Community Concert&nbsp;Band</a></div>
+                </div>
+			</div>
+		</div>
+        <div class="layout-col">
+            <div id="header-contact" class="content-component">
+                <a id="contact-open" href="/contact" title="Open Contact Info"><span id="contact-open-icon">✉</span></a>
+            </div>
+        </div>
+	</div>
+</header>
+<dialog id="panel-menu" class="template-panel">
+	<div>
+		<a id="menu-close" href="#" title="Close Menu"><span id="menu-close-icon">✕<!--✖--></span></a>
+	</div>
+	<nav id="site-menu" class="content-component">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a>
+				<!--
+                <ul>
+                    <li><a href="/about/#community">Community</a></li>
+                    <li><a href="/about/#music">Music</a></li>
+                    <li><a href="/about/#director">Director</a></li>
+                    <li><a href="/about/#membership">Membership</a></li>
+                    <li><a href="/about/#sponsors">Sponsors</a></li>
+                    <li><a href="/about/#history">History</a></li>
+                </ul>
+				-->
+            </li>
+            <li><a href="/concerts">Our Concerts</a></li>
+			<li><a href="/news">Our News</a></li>
+            <li><a href="/join">Join or Support Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</dialog>
+<dialog id="panel-contact" class="template-panel">
+    <div id="site-contact" class="content-component">
+		<div>
+			<a id="contact-close" href="#" title="Close Contact Info"><span id="contact-close-icon">✖</span></a>
+		</div>
+		<div>
+			<h2>Contact Us</h2>
+		</div>
+    </div>
+</dialog>
+<main id="template-main" class="layout-container">
+	<div class="layout-row">
+		<div class="layout-col">
+			<div id="main-content">
+                <article id="article-content" class="content-component">
+					<section><h2>Loading...</h2></section>
+                </article>
+			</div>
+		</div>
+	</div>
+</main>
+<footer id="template-footer" class="layout-container">
+	<div class="layout-row">
+		<div class="layout-col">
+			<h2>Connect With Us</h2>
+			<div id="footer-social" class="content-component">
+				<div class="wrapping-row">
+					<div id="footer-newsletter">
+						<p><a href="{{site.newsletterurl}}" target="_blank" class="cta-button">Sign Up for Our Newsletter ⇗</a></p>
+					</div>
+					<div class="wrapping-row">
+						<div id="footer-social-facebook"><a href="https://www.facebook.com/groups/426505544150417" target="_blank"><img src="/src/img/Facebook_Logo_Primary.png" alt="Facebook" class="a-hover"></a></div>
+						<div id="footer-social-youtube"><a href="https://www.youtube.com/" target="_blank"><img src="/src/img/yt_icon_rgb.png" alt="YouTube" class="a-hover"></a></div>
+					</div>
+				</div>
+			</div>            
+			<nav id="footer-nav" class="content-component">
+				<p><a href="/legal">Terms of Use and Other Legal Notices</a></p>
+			</nav>
+			<div id="footer-copyright" class="content-component">
+				<p>{{site.copyright}}</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
