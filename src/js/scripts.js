@@ -1,9 +1,9 @@
 "use strict";
 const settings = {
-  datadir: '/src/data/',
+  datadir: './src/data/',
   datafile: 'data.json',
-  contentdir: '/src/content/',
-  imagedir: '/src/img/',
+  contentdir: './src/content/',
+  imagedir: './src/img/',
   noreplacements: ["script", "style", "template", "noscript", "code", "pre", "textarea"],
   forcehttps: false,
   forcewww: false,
@@ -294,4 +294,5 @@ function load() {
   else if (document.addEventListener) { document.addEventListener('DOMContentLoaded', loadPage); }
   else { document.attachEvent('onreadystatechange', function () { if (document.readyState == 'complete') { loadPage(); } }); }
 }
+
 load();
