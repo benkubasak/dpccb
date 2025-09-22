@@ -134,7 +134,12 @@ tr:nth-child(even) {background-color: var(--color-lightest);}
 #template-footer {padding: var(--spacing) var(--spacing-gutter); background: var(--color-light); background: linear-gradient(150deg, var(--color-medium) 0%, var(--color-light) 80%, var(--color-lighter) 100%);}
 #template-main {margin: 0 auto; padding-bottom: var(--spacing-wider);}
 article > section {padding: 0 var(--spacing-gutter); border-top: var(--border-width) solid var(--color-lighter);}
-section:has(h1) {width: 100%; min-height: 18rem; color: var(--color-lightest); background: var(--color-medium); background: linear-gradient(0, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('../img/dpccb_onstage.jpg'); background-position: center; background-repeat: no-repeat; background-size: 100%; display: grid; justify-items: start; align-items: center; justify-content: start; align-content: center; border: 0;}
+section:has(h1) {
+	width: 100%; min-height: 18rem; border: 0;
+	color: var(--color-lightest); background: var(--color-medium);
+	background: linear-gradient(0, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('../img/dpccb_onstage.jpg');
+	background-position: center; background-repeat: no-repeat; background-size: cover;
+	display: grid; justify-items: start; align-items: center; justify-content: start; align-content: center;}
 #template-footer a {color: var(--color-accent-darkest);}
 a.cta-button {margin: var(--spacing-narrow) var(--spacing) var(--spacing-narrow) 0; padding: var(--spacing) var(--spacing); color: var(--color-lightest) !important; background: var(--color-accent-dark); background: linear-gradient(150deg, var(--color-accent-medium) 0%, var(--color-accent-dark) 60%, var(--color-accent-darker) 100%); border-radius: var(--border-radius-button); font-weight: var(--body-font-weight-bold); text-decoration: none; display: inline-block;}
 a.cta-button:hover {color: var(--color-lighter); background: var(--color-accent-darker); background: linear-gradient(150deg, var(--color-accent-darker) 0%, var(--color-accent-dark) 60%, var(--color-accent-medium) 100%); opacity: 1;}
@@ -206,4 +211,5 @@ div:has(> #menu-close), div:has(> #contact-close) {text-align: right;}
 	:has(:target) {scroll-behavior: smooth;}
 
 }
+
 
