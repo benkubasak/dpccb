@@ -173,6 +173,7 @@ figure > * {padding: var(--spacing); max-width: var(--content-narrow); backgroun
 #header-masthead .wrapping-row {justify-content: center;}
 #site-logo {margin: var(--spacing); height: var(--logo-height);}
 a#site-title {margin: var(--spacing); color: var(--color-lightest); font-family: var(--h-font-family); font-weight: var(--h-font-weight); font-size: var(--title-font-size); letter-spacing: var(--h-letter-spacing); line-height: var(--h-line-height); text-decoration: none; text-align: center; text-wrap: balance; display: inline-block;}
+a#contact-open {font-family: var(--h-font-family); font-weight: var(--h-font-weight); letter-spacing: var(--h-letter-spacing); line-height: 1;}
 a#menu-open, a#menu-close, a#contact-open, a#contact-close {margin: var(--spacing); color: var(--color-lightest); font-weight: var(--body-font-weight); font-size: var(--icon-height); text-decoration: none; display: inline-block;}
 a#menu-close, a#contact-close {color: var(--color-accent-darkest);}
 div:has(> #menu-close), div:has(> #contact-close) {text-align: right;}
@@ -211,5 +212,6 @@ div:has(> #menu-close), div:has(> #contact-close) {text-align: right;}
 	:has(:target) {scroll-behavior: smooth;}
 
 }
+
 
 
